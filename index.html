@@ -1,8 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Hosting</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body>
+
+<main class="container">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="assets/images/profile.png" alt="Profile">
+      <h3>Jantararat Sawatkamonworachot</h3>
+      <p class="title">Business Analyst</p>
+    </div>
+
+    <ul class="contact-list">
+      <li>Email: <br><a href="mailto:Jantararat.sawa@gmail.com">Jantararat.sawa@gmail.com</a></li>
+      <li>Phone: <br><a href="tel:+66837712446">+66 83771 2446</a></li>
+      <li>Location: <br>Bangkok, Thailand</li>
+    </ul>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <section class="content">
+
+    <nav class="navbar">
+      <button data-page="about" class="active">About</button>
+      <button data-page="Resume">Resume</button>
+      <button data-page="projects">Projects</button>
+      <button data-page="skills">Skills</button>
+      <button data-page="contact">Contact</button>
+    </nav>
+
+    <!-- ABOUT -->
+    <article id="about" class="page active">
+      <h2>About Me</h2>
+      <p>
+        <br>I am a third-year student studying Electronics and Telecommunications Engineering. From my experience with project management and programming, I understand how systems are developed, and I can work well in a team. I am also able to create programs and write basic user guides.
+      </p>
+    </article>
+
+    <!-- RESUME -->
+    <article id="Resume" class="page">
+
+        <header>
+            <h2 class="h2">Resume</h2>
+        </header>
+
+        <!-- ===== EDUCATION ===== -->
+        <section class="timeline">
+
+            <div class="title-wrapper">
+            <div class="icon-box">🎓</div>
+            <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+                <li class="timeline-item">
+                    <h4 class="timeline-item-title">
+                    King Mongkut's University of Technology Thonburi
+                    </h4>
+                    <span><b>2023 — Present</span>
+                    <p class="timeline-text">
+                    Faculty: Engineering
+                    <br>Major: Electronic and Telecommunication Engineering
+                    <br>Current Year: Junior (Third-year)
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- ===== EXPERIENCE ===== -->
+        <section class="timeline">
+
+            <div class="title-wrapper">
+            <div class="icon-box">💼</div>
+            <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+            <li class="timeline-item">
+                <h4 class="timeline-item-title">
+                Creative Director
+                </h4>
+                <span>2015 — Present</span>
+                <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum deleniti atque corrupti.
+                </p>
+            </li>
+
+            <li class="timeline-item">
+                <h4 class="timeline-item-title">
+                Art Director
+                </h4>
+                <span>2013 — 2015</span>
+                <p class="timeline-text">
+                Quis autem vel eum iure reprehenderit qui in ea voluptate.
+                </p>
+            </li>
+
+            </ol>
+        </section>
+    </article>
+
+    <!-- PROJECTS -->
+    <article id="projects" class="page">
+      <h2>Projects</h2>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>E-commerce Website</h3>
+          <p>React, Node.js</p>
+        </div>
+
+        <div class="card">
+          <h3>Weather App</h3>
+          <p>JavaScript, API</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- SKILLS -->
+    <article id="skills" class="page">
+      <h2>Skills</h2>
+
+      <ul class="skill-list">
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </article>
+
+    <!-- CONTACT -->
+    <article id="contact" class="page">
+      <h2>Contact</h2>
+
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </article>
+
+  </section>
+</main>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
